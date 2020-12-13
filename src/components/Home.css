@@ -1,0 +1,624 @@
+nav {
+    height: 80px;
+    background-color: white;
+    box-shadow: 0px 10px 10px -14px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 100px;
+    position: fixed;
+    right: 0px;
+    left: 0px;
+    top: 0px
+}
+
+nav .logo {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav .wailist-button {
+    border: 1px solid black;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    color: black;
+}
+
+@media screen and (max-width: 550px) {
+    nav {
+        height: 60px;
+        padding: 0px 50px;
+    }
+
+    .wailist-button {
+        padding: 5px 10px;
+        border-radius: 40px;
+        font-size: 12px;
+    }
+}
+
+/* main section started */
+
+main .display-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 50px;
+    margin-top: 120px;
+}
+
+.display-container h1 {
+    font-size: 48px;
+    width: 60%;
+}
+
+.display-container p {
+    font-size: 22px;
+    width: 47%;
+    margin: 15px;
+}
+
+.display-container .wailist-button {
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: black;
+    color: white;
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+.display-container img {
+    height: 400px;
+    margin-top: 100px;
+}
+
+@media screen and (max-width: 700px) {
+    .display-container h1 {
+        font-size: 38px;
+        width: 90%;
+    }
+
+    .display-container p {
+        font-size: 18px;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .display-container img {
+        height: 200px;
+    }
+    .display-container h1 {
+        font-size: 28px;
+    }
+
+    .display-container p {
+        font-size: 16px;
+    }
+}
+
+
+/* Display Container End */
+
+.feature-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f2f2f2;
+    padding: 80px 30px;
+    text-align: center;
+}
+
+.feature-container h1 {
+    font-size: 38px;
+    width: 60%;
+    font-weight: 600;
+}
+
+.feature-container h5 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.feature-container .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 50px;
+}
+
+.feature-container .grid .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.feature-container .grid .card div {
+    height: 70px;
+    width: 70px;
+    background-color: #1138c3;
+    border-radius: 50%;
+    margin-bottom: 25px;
+}
+
+.feature-container .grid .card h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+@media screen and (max-width: 700px) {
+    .feature-container h1 {
+        font-size: 28px;
+    }
+
+    .feature-container h5 {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .feature-container .grid .card div {
+        height: 40px;
+        width: 40px;
+    }
+
+    .feature-container h1 {
+        font-size: 22px;
+    }
+
+    .feature-container h5 {
+        font-size: 16px;
+    }
+
+    .feature-container .grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* Feature section end */
+
+.sub-features-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 50px;
+}
+
+.sub-features-container h1 {
+    font-size: 38px;
+    font-weight: 600;
+    align-self: center;
+    margin-top: 50px;
+}
+
+.sub-features-container .info {
+    font-size: 20px;
+    align-self: center;
+    margin-top: 5px;
+    margin-bottom: 110px;
+    text-align: center;
+}
+
+.sub-features-container .card,
+.sub-features-container .card1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+
+.sub-features-container .card p {
+    width: 70%;
+}
+
+.sub-features-container .card h2 {
+    font-size: 38px;
+    font-weight: 600;
+}
+
+.sub-features-container .card img {
+    height: 200px;
+}
+
+.sub-features-container .card1 p {
+    width: 70%;
+    padding-left: 20%;
+}
+
+.sub-features-container .card1 h2 {
+    font-size: 38px;
+    font-weight: 600;
+    padding-left: 20%;
+}
+
+.sub-features-container .card1 img {
+    height: 200px;
+}
+
+@media screen and (max-width: 700px) {
+    .sub-features-container .card img {
+        height: 150px;
+    }
+
+    .sub-features-container .card1 img {
+        height: 150px;
+    }
+
+    .sub-features-container .card1 h2 {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .sub-features-container .info {
+        margin-bottom: 50px;
+    }
+
+    .sub-features-container h1 {
+        font-size: 30px;
+    }
+
+    .sub-features-container .info {
+        margin-bottom: 50px;
+    }
+
+    .sub-features-container .card p {
+        width: 90%;
+    }
+
+    .sub-features-container .card h2 {
+        font-size: 28px;
+        font-weight: 600;
+    }
+
+    .sub-features-container .card img {
+        height: 100px;
+    }
+
+    .sub-features-container .card1 p {
+        width: 90%;
+        padding-left: 10%;
+    }
+
+    .sub-features-container .card1 h2 {
+        font-size: 28px;
+        padding-left: 10%;
+    }
+
+    .sub-features-container .card1 img {
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .sub-features-container {
+        margin: 0px 10px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+
+    .sub-features-container .info {
+        margin-bottom: 30px;
+    }
+
+    .sub-features-container h1 {
+        font-size: 22px;
+    }
+
+    .sub-features-container .info {
+        margin-bottom: 30px;
+    }
+
+    .sub-features-container .card p {
+        width: 90%;
+    }
+
+    .sub-features-container .card h2 {
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+    .sub-features-container .card img {
+        height: 50px;
+    }
+
+    .sub-features-container .card1 p {
+        width: 90%;
+        padding-left: 10%;
+    }
+
+    .sub-features-container .card1 h2 {
+        font-size: 22px;
+        padding-left: 10%;
+    }
+
+    .sub-features-container .card1 img {
+        height: 50px;
+    }
+}
+
+/* sub-feature section end */
+.approach-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+    background-color: #1138c3;
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.approach-container h1 {
+    font-size: 48px;
+}
+
+.approach-container h4 {
+    margin-top: 5px;
+    font-size: 24px;
+}
+
+.approach-container .wailist-button {
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 700px) {
+    .approach-container h1 {
+        font-size: 38px;
+    }
+
+    .approach-container h4 {
+        margin-top: 5px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .approach-container h1 {
+        font-size: 28px;
+    }
+}
+
+/* approach container end */
+
+.information {
+    display: flex;
+    margin: 50px 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.information img {
+    height: 300px;
+}
+
+.information .info-container {
+    margin-left: 50px;
+}
+
+.information .info-container h1 {
+    font-size: 38px;
+    font-weight: 600;
+}
+
+.information .info-container h4 {
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.information .info-container .info {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 10% 90%;
+}
+
+.information .info-container .info .round {
+    height: 30px;
+    width: 30px;
+    border-radius: 100px;
+    background-color: #1138c3;
+    margin-right: 15px;
+    margin-top: 10px;
+}
+
+.information .info-container .info h5 {
+    font-size: 22px;
+}
+
+@media screen and (max-width: 1050px) {
+    .information img {
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .information .info-container .info {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .information .info-container h1 {
+        font-size: 28px;
+    }
+
+    .information .info-container h4 {
+        font-size: 16px;
+    }
+
+    .information img {
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .information {
+        display: flex;
+        margin: 20px 20px;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .information img {
+        margin-top: 50px;
+    }
+
+    .information .info-container h1 {
+        margin-top: 25px;
+    }
+}
+
+/* information section end */
+
+.faq {
+    background-color: #f2f2f2;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.faq h1 {
+    align-self: center;
+    font-size: 38px;
+}
+
+.faq-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    margin: 0px 150px;
+}
+
+.faq-container div {
+    margin-top: 25px;
+}
+
+.faq-container div p {
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 700px) {
+    .faq-container {
+        margin: 0px 60px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .faq-container {
+        margin: 0px 20px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .faq-container {
+        margin: 0px 10px;
+    }
+    .faq {
+        padding: 20px;
+    }
+}
+
+/* end of .faq-container section */
+
+.approach-container2 {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.approach-container2 h1 {
+    font-size: 38px;
+}
+
+.approach-container2 p {
+    font-size: 22px;
+    margin-top: 5px;
+}
+
+.approach-container2 .wailist-button {
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    margin-top: 25px;
+}
+
+@media screen and (max-width: 550px) {
+
+    .approach-container2 h1 {
+        font-size: 28px;
+    }
+
+    .approach-container2 p {
+        font-size: 18px;
+    }
+}
+
+/*apprach container2 end */
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    text-decoration-line: underline;
+}
+
+footer h4 {
+    margin-left: 10px;
+}
+
+footer span {
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 550px) {
+    footer {
+        flex-direction: column;
+        align-items: unset;
+    }
+      
+    footer h4 {
+        margin-bottom: 10px;
+    }
+
+    footer span {
+        margin-top: 10px;
+    }
+}

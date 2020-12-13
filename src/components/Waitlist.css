@@ -1,0 +1,96 @@
+.approach-container3 {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f2f2f2;
+    padding: 60px;
+    text-align: center;
+}
+
+.approach-container3 h1 {
+    font-size: 38px;
+    font-weight: 600;
+}
+
+.approach-container3 h5 {
+    font-size: 28px;
+    font-weight: 400;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 60px;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+}
+
+form div input {
+    border: none;
+    width: 400px;
+    background-color: #f2f2f2;
+    padding: 12px;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+
+form button {
+    border: none;
+    margin-top: 10px;
+    background-color: black;
+    color: white;
+    width: 420px;
+    padding: 10px;
+    border-radius: 50px;
+    font-size: 16px;
+    outline: none;
+}
+
+@media screen and (max-width: 550px) {
+.approach-container3 {
+    margin-top: 50px;
+}
+}
+
+@media screen and (max-width: 500px) {
+    form button {
+        width: 320px;
+    }
+
+    .approach-container3 h1 {
+        font-size: 28px;
+    }
+    
+    .approach-container3 h5 {
+        font-size: 20px;
+    }
+
+    form div input {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    form button {
+        width: 250px
+    }
+
+    form div input {
+        width: 230px;
+    }
+}
+
+form button:active {
+    background-color: tomato;
+    opacity: 1;
+    transition: 0s
+}

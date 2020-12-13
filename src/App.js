@@ -1,26 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import {BrowserRouter, Switch, Route} from 'react-router-dom'
+import Home from './components/Home'
+import './App.css'
+import Waitlist from './components/Waitlist'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <BrowserRouter>
+       <Switch>
+         <Route exact path="/" component={Home} />
+         <Route exact path="/waitlist" component={Waitlist} />
+       </Switch>
+    </BrowserRouter>
+  )
 }
 
-export default App;
+export default App
