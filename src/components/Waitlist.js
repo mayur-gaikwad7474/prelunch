@@ -12,7 +12,7 @@ const Waitlist = () => {
             if (!email) return alert("plz add email address");
             const regex = "^[\\w-_\\.+]*[\\w-_\\.]\\@([\\w]+\\.)+[\\w]+[\\w]$";
             if (!email.match(regex)) return alert("plz enter valid email address")
-            const data = await Axios.post("http://localhost:4000/email", {
+            const data = await Axios.post("https://creatosaurus.io/joinlist/email", {
                 email
             })
             if (data.status === 200) {
