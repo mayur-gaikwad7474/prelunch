@@ -20,7 +20,8 @@ const Waitlist = () => {
                 alert("You haved successfully joined the waitlist")
             }
         } catch (error) {
-            alert("This email all ready joined the waitlist")
+            if(error.response.status === 500) return alert("This email all ready joined the waitlist")
+            alert("check the connection")
         }
     }
 
