@@ -80,18 +80,18 @@ nav .wailist-button:hover {
 
 main .display-container {
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
   text-align: center;
-  margin: 50px;
-  margin-top: 90px;
+  margin:0px 50px;
+  height: calc(100vh - 70px);
 }
 
 .display-container h1 {
   font-size: 46px;
   width: 70%;
   color: #252249;
+  margin-top: 120px;
 }
 
 .display-container p {
@@ -111,9 +111,9 @@ main .display-container {
 }
 
 .display-container img {
-  height: 440px;
+  height: 460px;
   position: absolute;
-  top: 210px;
+  top: 50vh;
   z-index: -10;
 }
 
@@ -284,6 +284,7 @@ main .display-container {
   width: 60%;
   color: #464154;
   margin-top: 10px;
+  font-size: 20px;
 }
 
 .sub-features-container .card h2 {
@@ -301,6 +302,7 @@ main .display-container {
   padding-left: 20%;
   color: #464154;
   margin-top: 10px;
+  font-size: 20px;
 }
 
 .sub-features-container .card1 h2 {
@@ -433,7 +435,7 @@ main .display-container {
   font-size: 48px;
 }
 
-.approach-container h4 {
+.approach-container p {
   margin-top: 5px;
   font-size: 24px;
 }
@@ -659,7 +661,7 @@ main .display-container {
 footer {
   background-color: #000000;
   color: white;
-  padding: 25px;
+  padding: 25px 6%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -682,6 +684,7 @@ footer h4 {
 footer img {
   height: 30px;
   width: 30px;
+  margin-left: 10px;
 }
 
 @media screen and (max-width: 550px) {

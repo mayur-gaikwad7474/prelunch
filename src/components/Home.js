@@ -105,7 +105,7 @@ const Home = (props) => {
 
                 <section className="approach-container">
                     <h1>Ready to Level up Your Social Media?</h1>
-                    <h4>Join the waitlist now!</h4>
+                    <p>Join the waitlist now!</p>
                     <NavLink to={{
                         pathname: '/waitlist',
                         state: { ref: props.location.search.substring(5) }
@@ -205,11 +205,10 @@ const Home = (props) => {
                     <a href="#id">Privacy Policy</a>
                 </div>
                 <div>
-                    <a href="https://www.linkedin.com/company/creatosaurushq/"><img className="social" src={Twitter} alt=""></img></a>
-                    <a href="https://twitter.com/creatosaurushq"><img className="social" src={Linkedin} alt=""></img></a>
+                    <a href="https://twitter.com/creatosaurushq"><img className="social" src={Twitter} alt=""></img></a>
+                    <a href="https://www.linkedin.com/company/creatosaurushq/"><img className="social" src={Linkedin} alt=""></img></a>
                 </div>
             </footer>
-
         </div>
     )
 }

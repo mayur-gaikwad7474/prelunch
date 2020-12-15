@@ -7,7 +7,7 @@ const Waitlist = (props) => {
 
     const [email, setemail] = useState(null)
     const [name, setname] = useState(null)
-    const [added, setadded] = useState(true)
+    const [added, setadded] = useState(false)
 
     const addEmailToJoinList = async () => {
         try {
@@ -33,8 +33,8 @@ const Waitlist = (props) => {
         <div>
             <nav>
                 <div className="logo">
-                    <img src={Logo} style={{ height: 35, marginRight: 5 }} alt="" />
-                    <strong style={{ fontSize: 25, fontWeight: 'bold' }}>Creatosaurus</strong>
+                    <img src={Logo} alt="" />
+                    <strong>Creatosaurus</strong>
                 </div>
                 <div className="wailist-button">
                     Join Waitlist
@@ -56,9 +56,9 @@ const Waitlist = (props) => {
                             <input id="email" type="email" placeholder="your email" onChange={(e) => setemail(e.target.value)} />
                         </div>
                         <button onClick={(e) => addEmailToJoinList()}>Join Waitlist</button>
-                    </form> : <div style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', padding:50}}>
+                    </form> : <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', padding: 50 }}>
                             <p>In most browsers, the placeholder text is grey</p>
-                            <button>share</button>
+                            <div>{`https://www.creatosaurus.io/?ref=${email}`}</div>
                         </div>
                 }
             </main>
