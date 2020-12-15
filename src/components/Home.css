@@ -83,7 +83,8 @@ main .display-container {
   align-items: center;
   flex-direction: column;
   text-align: center;
-  height: calc(100vh - 95px);
+  margin:0px 50px;
+  height: 100vh;
 }
 
 .display-container h1 {
@@ -95,7 +96,7 @@ main .display-container {
 
 .display-container p {
   font-size: 22px;
-  width: 70%;
+  width: 75%;
   margin: 15px;
   color: #464154;
 }
@@ -434,7 +435,7 @@ main .display-container {
   font-size: 48px;
 }
 
-.approach-container p {
+.approach-container h4 {
   margin-top: 5px;
   font-size: 24px;
 }
@@ -660,7 +661,7 @@ main .display-container {
 footer {
   background-color: #000000;
   color: white;
-  padding: 25px 6%;
+  padding: 25px 8%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -683,7 +684,6 @@ footer h4 {
 footer img {
   height: 30px;
   width: 30px;
-  margin-left: 10px;
 }
 
 @media screen and (max-width: 550px) {
