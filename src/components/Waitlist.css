@@ -1,22 +1,24 @@
 .approach-container3 {
-    margin-top: 80px;
+    margin-top: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #f2f2f2;
-    padding: 60px;
+    background-color: rgba(239,241,255,0.5);
+    padding: 50px;
     text-align: center;
 }
 
 .approach-container3 h1 {
     font-size: 38px;
     font-weight: 600;
+    color: #252249;
 }
 
 .approach-container3 h5 {
     font-size: 28px;
     font-weight: 400;
+    color:#464154;
 }
 
 form {
@@ -35,19 +37,24 @@ form div {
 form div input {
     border: none;
     width: 400px;
-    background-color: #f2f2f2;
+    background-color:rgba(239,241,255,0.5);
     padding: 12px;
     border-radius: 5px;
     margin-top: 5px;
     margin-bottom: 20px;
 }
 
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color:#464154;
+    opacity: 1; /* Firefox */
+  }
+  
 
 form button {
     border: none;
     margin-top: 10px;
-    background-color: black;
-    color: white;
+    background-color: #ff0057;
+    color: #fff;
     width: 420px;
     padding: 10px;
     border-radius: 50px;
