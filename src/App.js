@@ -4,6 +4,8 @@ import './App.css'
 import Waitlist from './components/Waitlist'
 import Home from './components/Home'
 import Notfound from './components/Notfound'
+import Privacypolicy from './components/Privacypolicy'
+import Termsandcondition from './components/Termsandcondition'
 
 const App = () => {
   return (
@@ -11,6 +13,8 @@ const App = () => {
        <Switch>
          <Route exact path="/" component={Home} />
          <Route exact path="/waitlist" component={Waitlist} />
+         <Route exact path="/policy" component={Privacypolicy} />
+         <Route exact path="/conditions" component={Termsandcondition} />
          <Route component={Notfound} />
        </Switch>
     </BrowserRouter>

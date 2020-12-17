@@ -1,0 +1,54 @@
+.privacy {
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.privacy h1 {
+    color: #252249;
+    margin-top: 10px;
+    width: 85%;
+    align-self: center;
+}
+
+.privacy p {
+    width: 85%;
+    font-size: 18px;
+    color: #464154;
+}
+
+.privacy h2 {
+    align-self: start;
+    width: 85%;
+    align-self: center;
+    margin-top: 15px;
+    color: #252249;
+}
+
+.privacy h4 {
+    color: #252249;
+    align-self: start;
+    width: 85%;
+    align-self: center;
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+.fill-circle {
+    height: 12px;
+    width: 12px;
+    background-color: #252249;
+    border-radius: 100px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.subfill-circle {
+    height: 8px;
+    width: 8px;
+    border-radius: 100px;
+    margin-right: 10px;
+    margin-top: 5px;
+    border: 1px solid #000000;
+}

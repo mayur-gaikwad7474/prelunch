@@ -2,6 +2,9 @@ import React, { useState } from 'react'
 import './Waitlist.css'
 import Logo from '../Assets/Logo.svg'
 import Axios from 'axios'
+import { NavLink } from 'react-router-dom'
+import Linkedin from '../Assets/linkedin.svg'
+import Twitter from '../Assets/twitter.svg'
 
 const Waitlist = (props) => {
 
@@ -32,7 +35,7 @@ const Waitlist = (props) => {
     return (
         <div>
             <nav>
-                <div className="logo">
+                <div className="logo" onClick={() => props.history.push('/')}>
                     <img src={Logo} alt="" />
                     <strong>Creatosaurus</strong>
                 </div>
@@ -65,12 +68,12 @@ const Waitlist = (props) => {
             <footer>
                 <div>
                     <h4>© 2020 Creatosaurus</h4>
-                    <a href="#id">Terms of Service</a>
-                    <a href="#id">Privacy Policy</a>
+                    <NavLink to="/policy">Terms of Service</NavLink>
+                    <NavLink to="/condition">Privacy Policy</NavLink>
                 </div>
                 <div>
-                    <span><a href="https://www.linkedin.com/company/creatosaurushq/">twitter</a></span>
-                    <span><a href="https://twitter.com/creatosaurushq">linkedin</a></span>
+                    <a href="https://twitter.com/creatosaurushq"><img className="social" src={Twitter} alt=""></img></a>
+                    <a href="https://www.linkedin.com/company/creatosaurushq/"><img className="social" src={Linkedin} alt=""></img></a>
                 </div>
             </footer>
         </div>
