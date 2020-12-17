@@ -201,8 +201,8 @@ const Home = (props) => {
             <footer>
                 <div>
                     <h4>© 2020 Creatosaurus</h4>
-                    <NavLink to="/policy">Terms of Service</NavLink>
-                    <NavLink to="/condition">Privacy Policy</NavLink>
+                    <NavLink to="">Terms of Service</NavLink>
+                    <NavLink to="/privacy-policy">Privacy Policy</NavLink>
                 </div>
                 <div>
                     <a href="https://twitter.com/creatosaurushq"><img className="social" src={Twitter} alt=""></img></a>

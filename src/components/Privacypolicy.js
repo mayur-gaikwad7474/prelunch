@@ -9,7 +9,7 @@ const Privacypolicy = (props) => {
     return (
         <div>
             <nav>
-                <div className="logo" onClick={()=>props.history.push('/')}>
+                <div className="logo" onClick={() => props.history.push('/')}>
                     <img src={Logo} alt="" />
                     <strong>Creatosaurus</strong>
                 </div>
@@ -32,9 +32,18 @@ const Privacypolicy = (props) => {
                     with respect to your Personal Information, and how you can reach us to update your contact
                     information or get answers to questions you may have about our privacy practices.
                 </p>
-                <h1 style={{marginTop:15}}>Personal information provided by you</h1>
-                <h2 style={{marginTop:0}}>Personal Information Collected from using the Service</h2>
-                <h4>Registration</h4>
+                <h2>1. Personal information we may collect</h2>
+                <p>For the purpose of this Privacy Policy, “Personal Information” means any information relating
+                to an identified or identifiable individual. We obtain Personal Information relating to you
+                from various sources described below.
+                Where applicable, we indicate whether and why you must provide us with your Personal Information,
+                as well as the consequences of failing to do so. If you do not provide Personal Information when
+                requested, you may not be able to benefit from our Service if that information is necessary to
+                provide you with the service or if we are legally required to collect it.
+               </p>
+                <h2 style={{ marginTop: 15 }}>2. Personal information provided by you</h2>
+                <h2 style={{ marginTop: 0 }}>2a. Personal Information Collected from using the Service</h2>
+                <h4>1. Registration</h4>
                 <p>
                     If you desire to have access to certain restricted sections of the Site or request to receive
                     marketing materials, you may be required to become a registered user, and to submit the following
@@ -42,7 +51,7 @@ const Privacypolicy = (props) => {
                     name, password, city, time zone, country of residence, gender, age, your postal address, telephone
                     number, PAN, GST and TAN numbers.
                 </p>
-                <h4>Customer Support</h4>
+                <h4>2. Customer Support</h4>
                 <p>
                     We may also collect the information you send us through the Service (these include communications
                     with our customer support team or other communications that you may send us and their contents),
@@ -51,27 +60,27 @@ const Privacypolicy = (props) => {
                     maintain, and provide the features and functionality of the Service to you, to correspond
                     with you, and to address any issues you raise about the Service.
                 </p>
-                <h4>Making a Purchase</h4>
+                <h4>3. Making a Purchase</h4>
                 <p>
                     When you make payments through the Service, you will need to provide Personal Information such
                     as your card number and billing address.
                 </p>
-                <h4>Social Media</h4>
+                <h4>4. Social Media</h4>
                 <p>
                     In order to allow you to post to your social media platforms, we may ask you to provide your
                     username, account ids, social handle, time zones, and email address.
                 </p>
-                <h4>Data Storage</h4>
+                <h4>5. Data Storage</h4>
                 <p>
                     In order to allow you to upload your assets such as photos, videos & illustrations to create
                     graphics & videos we may ask you to provide your asset files.
                 </p>
-                <h4>Other</h4>
+                <h4>6. Other</h4>
                 <p>
                     We may also collect your contact details when you provide them in the context of our customer,
                     vendor, and partner relationships.
                 </p>
-                <h2>Personal Information Collected from Connected Social Media Accounts</h2>
+                <h2>2b. Personal Information Collected from Connected Social Media Accounts</h2>
                 <p>
                     If you connect your third party social media account to your Creatosaurus account, we may collect
                     certain information stored in your social media account such as:Creatosaurus may allow you to
@@ -83,15 +92,15 @@ const Privacypolicy = (props) => {
                     counts), to the extent permitted by applicable law. This data will only be used by Creatosaurus
                     to provide you with the Service you expect and will not be shared with any third parties.
                 </p>
-                <h2>Personal Information Automatically Obtained from Your Interactions with the Service</h2>
-                <h4>Log Data</h4>
+                <h2>2c. Personal Information Automatically Obtained from Your Interactions with the Service</h2>
+                <h4>1. Log Data</h4>
                 <p>
                     When you use our Service, our servers automatically record information that your browser sends
                     whenever you visit a website (“Log Data”). This Log Data may include information such as your IP
                     address, browser type or the domain from which you are visiting, the web-pages you visit, the
                     search terms you use, and any advertisements on which you click.
                 </p>
-                <h4>Cookies and Similar Technologies</h4>
+                <h4>2. Cookies and Similar Technologies</h4>
                 <p>
                     Like many websites, we also use “cookie” technology to collect additional website usage data and
                     to improve the Site and our Service. A cookie is a small data file that we transfer to your
@@ -114,7 +123,7 @@ const Privacypolicy = (props) => {
                     cookies from the Service, you may not be able to utilize the features of the Service to their fullest
                     potential.
                 </p>
-                <h4>Third-Party Web Beacons and Third Party Buttons</h4>
+                <h4>3. Third-Party Web Beacons and Third Party Buttons</h4>
                 <p>
                     We may display third-party content on the Service, including third-party advertising. Third-party
                     content may use cookies, web beacons, or other mechanisms for obtaining data in connection with
@@ -124,7 +133,7 @@ const Privacypolicy = (props) => {
                     is collected directly by these third parties, not by Creatosaurus. Please consult such third
                     party’s data collection, use, and disclosure policies for more information.
                 </p>
-                <h4>Links to Other Websites</h4>
+                <h4>4. Links to Other Websites</h4>
                 <p>
                     Our Site contains links to other websites. The fact that we link to a website is not an endorsement,
                     authorization or representation of our affiliation with that third party. We do not exercise
@@ -135,7 +144,7 @@ const Privacypolicy = (props) => {
                     sites or services to which links or access are provided through the Service. We encourage you to
                     read the privacy policies or statements of the other websites you visit.
                 </p>
-                <h4>Links to Other Websites</h4>
+                <h4>5. Links to Other Websites</h4>
                 <p>
                     Our Site contains links to other websites. The fact that we link to a website is not an endorsement,
                     authorization or representation of our affiliation with that third party. We do not exercise
@@ -146,7 +155,7 @@ const Privacypolicy = (props) => {
                     sites or services to which links or access are provided through the Service. We encourage you to
                     read the privacy policies or statements of the other websites you visit.
                 </p>
-                <h2>How we may use your personal information</h2>
+                <h2>3. How we may use your personal information</h2>
                 <p>We may use the Personal Information we obtain about you to:</p>
                 <div style={{ width: '80%', alignSelf: 'center', display: 'flex', marginTop: 10 }}>
                     <div className="fill-circle"></div>
@@ -263,9 +272,9 @@ const Privacypolicy = (props) => {
                     security, and performance of our Service, to anonymize Personal Information and carry out
                     data analyses.</p>
                 </div>
-                <h2>How we share personal information</h2>
+                <h2>4. How we share personal information</h2>
                 <p>We may disclose the Personal Information we collect about you as described below or otherwise disclosed to you at the time the data is collected, including with:</p>
-                <h4>Social Media Platforms</h4>
+                <h4>a. Social Media Platforms</h4>
                 <p>By using your information we help you to publish your content on social platforms, allow you to
                 track metrics for analytical purposes, and engage with customers through public replies,
                 comments and conversations (direct messages or “DMs”). We may allow you to link your account
@@ -273,15 +282,7 @@ const Privacypolicy = (props) => {
                 Facebook, and to transfer your information to and from the applicable third-party platform.
                 Once you share your content to a social media platform, its use will be governed by that
                 platform’s privacy policy.</p>
-                <h4>Social Media Platforms</h4>
-                <p>By using your information we help you to publish your content on social platforms, allow you to
-                track metrics for analytical purposes, and engage with customers through public replies,
-                comments and conversations (direct messages or “DMs”). We may allow you to link your account
-                on Creatosaurus with an account on a third party social network platform, such as Twitter or
-                Facebook, and to transfer your information to and from the applicable third-party platform.
-                Once you share your content to a social media platform, its use will be governed by that
-                platform’s privacy policy.</p>
-                <h4>Service Providers</h4>
+                <h4>b. Service Providers</h4>
                 <p>We engage certain trusted third parties to perform functions and provide services to us,
                 including hosting and maintenance, analytics, error monitoring, debugging, performance
                 monitoring, billing, customer relationship, database storage and management, and direct
@@ -289,7 +290,7 @@ const Privacypolicy = (props) => {
                 but only to the extent necessary to perform these functions and provide such services.
                 We also require these third parties to maintain the privacy and security of the Personal
                 Information they process on our behalf.</p>
-                <h4>Compliance with Laws and Law Enforcement</h4>
+                <h4>c. Compliance with Laws and Law Enforcement</h4>
                 <p>Creatosaurus cooperates with government and law enforcement officials or private parties to
                 enforce and comply with the law. To the extent permitted under applicable law, we may
                 disclose any information about you to government or law enforcement officials or private
@@ -299,13 +300,13 @@ const Privacypolicy = (props) => {
                 safety of the public or any person, to prevent or stop any illegal, unethical, fraudulent,
                 abusive, or legally actionable activity, to protect the security or integrity of the Service
                 and any equipment used to make the Service available, or to comply with the law.</p>
-                <h4>Business Transfers</h4>
+                <h4>d. Business Transfers</h4>
                 <p>Creatosaurus may sell, transfer or otherwise share some or all of its assets, including
                 Personal Information, in connection with a merger, acquisition, reorganization, sale of
                 assets, or similar transaction, or in the event of insolvency or bankruptcy. You will have
                 the opportunity to opt-out of any such transfer if the new entity’s planned processing of
                 your information differs materially from that set forth in this Privacy Policy.</p>
-                <h4>Other Third Parties</h4>
+                <h4>e. Other Third Parties</h4>
                 <p>We may share Personal Information with our headquarters and affiliates, and business partners
                 to whom it is reasonably necessary or desirable for us to disclose your data for the purposes
                 described in this Privacy Policy. We may also make certain non-Personal Information available
@@ -313,7 +314,7 @@ const Privacypolicy = (props) => {
                 assist third parties in understanding our users’ interest, habits, and usage patterns for
                 certain programs, content, services, advertisements, promotions, and functionality available
                 through the Service.</p>
-                <h2>How we protect personal information</h2>
+                <h2>5. How we protect personal information</h2>
                 <p>
                     Creatosaurus cares deeply about safeguarding the confidentiality of your Personal Information.
                     We employ administrative and electronic measures designed to appropriately protect your Personal
@@ -341,7 +342,7 @@ const Privacypolicy = (props) => {
                     delete some information from or about you, mandatory retention periods provided by law and the statute
                     of limitations.
                 </p>
-                <h2>Your rights and choices</h2>
+                <h2>6. Your rights and choices</h2>
                 <p>
                     If you decide at any time that you no longer wish to receive marketing communications from us,
                     please follow the unsubscribe instructions provided in any of the communications. You may also
@@ -364,7 +365,7 @@ const Privacypolicy = (props) => {
                     submit a request to exercise your rights under applicable law, please contact us as specified in the “How to
                     Contact Us” section below.
                 </p>
-                <h2>Data transfers</h2>
+                <h2>7. Data transfers</h2>
                 <p>Creatosaurus is based in India and operates on the basis of applicable Law. Personal
                 Information that we collect may be transferred to, and stored at, any of our affiliates,
                 partners or service providers which may be inside or outside the European Economic Area (“EEA”)
@@ -373,13 +374,13 @@ const Privacypolicy = (props) => {
                 the same data protection laws as the country in which you initially provided the information.
                 When we transfer or disclose your Personal Information to other countries, we will protect
                 that information as described in this Privacy Policy.</p>
-                <h2>Children's privacy</h2>
+                <h2>8. Children's privacy</h2>
                 <p>The Site is not directed to persons under 13. If a parent or guardian becomes aware that his
                 or her child has provided us with Personal Information without their consent, he or she should
                 contact us at contact@creatosaurus.io. We do not knowingly collect Personal Information from
                 children under 13. If we become aware that a child under 13 has provided us with Personal
                 Information, we will delete such information from our files.</p>
-                <h2>Information that cannot be uploaded</h2>
+                <h2>9. Information that cannot be uploaded</h2>
                 <p>
                     While using the Services, you shall not host, display, upload, modify, publish, transmit,
                     update or share any information on to the Services that:
@@ -400,7 +401,7 @@ const Privacypolicy = (props) => {
                     relations with foreign states, or public order or causes incitement to the commission of any
                     cognizable offence or prevents investigation of any offence or is insulting any other nation.
                 </p>
-                <h2>Updates to this Privacy Policy</h2>
+                <h2>10. Updates to this Privacy Policy</h2>
                 <p>
                     This Privacy Policy may be updated from time to time for any reason; each version will apply to
                     information collected while it was in place. We will notify you of any modifications to our
@@ -412,14 +413,14 @@ const Privacypolicy = (props) => {
                     changes are made. Your continued use of the Service after the revised Privacy Policy has become effective
                     indicates that you have read, understood and agreed to the current version of this Privacy Policy.
                 </p>
-                <h2>Your California privacy rights</h2>
+                <h2>11. Your California privacy rights</h2>
                 <p>
                     California law affords California residents certain additional rights regarding our collection
                     and use of your personal information. If you would like to exercise your rights to your Personal
                     Information, you may contact us by emailing us at contact@creatosaurus.io.
                 </p>
-                <h2>Contact us</h2>
-                <p style={{marginBottom:50}}>Creatosaurus is the entity responsible for the processing of your Personal Information. If
+                <h2>12. Contact us</h2>
+                <p style={{ marginBottom: 50 }}>Creatosaurus is the entity responsible for the processing of your Personal Information. If
                 you have any questions or comments regarding this Privacy Policy, or if you would like to
                 exercise your rights to your Personal Information, you may contact us by emailing us at
                 contact@creatosaurus.io.</p>
@@ -427,8 +428,8 @@ const Privacypolicy = (props) => {
             <footer>
                 <div>
                     <h4>© 2020 Creatosaurus</h4>
-                    <NavLink to="/policy">Terms of Service</NavLink>
-                    <NavLink to="/condition">Privacy Policy</NavLink>
+                    <NavLink to="">Terms of Service</NavLink>
+                    <NavLink to="/privacy-policy">Privacy Policy</NavLink>
                 </div>
                 <div>
                     <a href="https://twitter.com/creatosaurushq"><img className="social" src={Twitter} alt=""></img></a>
