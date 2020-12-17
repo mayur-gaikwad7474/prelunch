@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import './Waitlist.css'
 import Logo from '../Assets/Logo.svg'
 import Axios from 'axios'
@@ -11,6 +11,10 @@ const Waitlist = (props) => {
     const [email, setemail] = useState(null)
     const [name, setname] = useState(null)
     const [added, setadded] = useState(false)
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
 
     const addEmailToJoinList = async () => {
         try {

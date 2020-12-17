@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import './Home.css'
 import Home_image from '../Assets/Home.png'
 import View from '../Assets/360.png'
@@ -17,6 +17,11 @@ import { NavLink } from 'react-router-dom'
 
 
 const Home = (props) => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
+    
     return (
         <div>
             <nav>

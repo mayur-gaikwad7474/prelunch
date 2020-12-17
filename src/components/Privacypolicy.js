@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import Logo from '../Assets/Logo.svg'
 import { NavLink } from 'react-router-dom'
 import Linkedin from '../Assets/linkedin.svg'
@@ -6,6 +6,11 @@ import Twitter from '../Assets/twitter.svg'
 import './Privacypolicy.css'
 
 const Privacypolicy = (props) => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
+    
     return (
         <div>
             <nav>
