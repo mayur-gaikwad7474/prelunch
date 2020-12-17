@@ -47,7 +47,7 @@ const Privacypolicy = (props) => {
                 provide you with the service or if we are legally required to collect it.
                </p>
                 <h2 style={{ marginTop: 15 }}>2. Personal information provided by you</h2>
-                <h2 style={{ marginTop: 0 }}>2a. Personal Information Collected from using the Service</h2>
+                <h2 style={{ marginTop: 0, fontSize:20 }}>2a. Personal Information Collected from using the Service</h2>
                 <h4>1. Registration</h4>
                 <p>
                     If you desire to have access to certain restricted sections of the Site or request to receive
@@ -85,10 +85,10 @@ const Privacypolicy = (props) => {
                     We may also collect your contact details when you provide them in the context of our customer,
                     vendor, and partner relationships.
                 </p>
-                <h2>2b. Personal Information Collected from Connected Social Media Accounts</h2>
+                <h2 style={{fontSize:20 }}>2b. Personal Information Collected from Connected Social Media Accounts</h2>
                 <p>
                     If you connect your third party social media account to your Creatosaurus account, we may collect
-                    certain information stored in your social media account such as:Creatosaurus may allow you to
+                    certain information stored in your social media account such as:<br style={{marginTop:5}}></br>Creatosaurus may allow you to
                     connect your third party social media account such as LinkedIn, Twitter, Facebook, etc
                     to your Creatosaurus account, in which case we will access certain information from the platform
                     regarding your account. In particular, we may collect profile image, display name, username/page
@@ -97,7 +97,7 @@ const Privacypolicy = (props) => {
                     counts), to the extent permitted by applicable law. This data will only be used by Creatosaurus
                     to provide you with the Service you expect and will not be shared with any third parties.
                 </p>
-                <h2>2c. Personal Information Automatically Obtained from Your Interactions with the Service</h2>
+                <h2 style={{fontSize:20 }}>2c. Personal Information Automatically Obtained from Your Interactions with the Service</h2>
                 <h4>1. Log Data</h4>
                 <p>
                     When you use our Service, our servers automatically record information that your browser sends
