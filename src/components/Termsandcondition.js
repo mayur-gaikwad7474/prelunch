@@ -3,6 +3,7 @@ import Logo from '../Assets/Logo.svg'
 import { NavLink } from 'react-router-dom'
 import Linkedin from '../Assets/linkedin.svg'
 import Twitter from '../Assets/twitter.svg'
+import './Privacypolicy.css'
 
 const Termsandcondition = (props) => {
     return (
@@ -20,6 +21,7 @@ const Termsandcondition = (props) => {
               </NavLink>
             </nav>
             <main className="privacy">
+                <h1>Terms and Conditions</h1>
                 <p>
                     Welcome, and thank you for your interest in Creatosaurus (“Creatosaurus,” “we,” or “us”) and our
                     website at Creatosaurus.io, along with our related websites, networks, applications,

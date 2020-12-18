@@ -16,8 +16,8 @@ const App = () => {
         <Suspense fallback={<div>Loading...</div>}>
           <Route exact path="/privacy-policy" component={Privacypolicy} />
           <Route exact path="/terms&conditions" component={Termsandcondition} />
-          <Route component={Notfound} />
         </Suspense>
+        <Route component={Notfound} />
       </Switch>
     </BrowserRouter>
   )
