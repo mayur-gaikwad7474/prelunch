@@ -206,7 +206,7 @@ const Home = (props) => {
             <footer>
                 <div>
                     <h4>© 2020 Creatosaurus</h4>
-                    <NavLink to="">Terms of Service</NavLink>
+                    <NavLink to="/terms&conditions">Terms of Service</NavLink>
                     <NavLink to="/privacy-policy">Privacy Policy</NavLink>
                 </div>
                 <div>
