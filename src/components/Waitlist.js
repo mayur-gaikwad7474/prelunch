@@ -10,7 +10,6 @@ const Waitlist = (props) => {
 
     const [email, setemail] = useState(null)
     const [name, setname] = useState(null)
-    const [added, setadded] = useState(false)
 
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -21,18 +20,17 @@ const Waitlist = (props) => {
             if (!email) return alert("plz add email address");
             const regex = "^[\\w-_\\.+]*[\\w-_\\.]\\@([\\w]+\\.)+[\\w]+[\\w]$";
             if (!email.match(regex)) return alert("plz enter valid email address")
-            //https://creatosaurus.io/joinlist/email
-            const data = await Axios.post("http://localhost:4000/joinlist/email", {
+            //https://creatosaurus.io/joinlist/email http://localhost:4000/joinlist/email
+            const data = await Axios.post("https://creatosaurus.io/joinlist/email", {
                 email,
                 userName: name,
                 ref: props.location.state.ref,
             })
             if (data.status === 200) {
-                setadded(true)
+                alert("You have joined wait list succesfully")
             }
         } catch (error) {
-            if (error.response.status === 500) return alert("This email all ready joined the waitlist")
-            alert("check the connection")
+            console.log(error)
         }
     }
 
@@ -52,22 +50,17 @@ const Waitlist = (props) => {
                     <h1>300+ people waiting</h1>
                     <h5>Get access to our early beta release of creatosaurus</h5>
                 </section>
-                {
-                    added === false ? <form onSubmit={(e) => e.preventDefault()}>
-                        <div>
-                            <label htmlFor="email">Name</label>
-                            <input type="txt" placeholder="your good name" onChange={(e) => setname(e.target.value)} />
-                        </div>
-                        <div>
-                            <label htmlFor="email">Email</label>
-                            <input id="email" type="email" placeholder="your email" onChange={(e) => setemail(e.target.value)} />
-                        </div>
-                        <button onClick={(e) => addEmailToJoinList()}>Join Waitlist</button>
-                    </form> : <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', padding: 50 }}>
-                            <p>In most browsers, the placeholder text is grey</p>
-                            <div>{`https://www.creatosaurus.io/?ref=${email}`}</div>
-                        </div>
-                }
+                <form onSubmit={(e) => e.preventDefault()}>
+                    <div>
+                        <label htmlFor="email">Name</label>
+                        <input type="txt" placeholder="your good name" onChange={(e) => setname(e.target.value)} />
+                    </div>
+                    <div>
+                        <label htmlFor="email">Email</label>
+                        <input id="email" type="email" placeholder="your email" onChange={(e) => setemail(e.target.value)} />
+                    </div>
+                    <button onClick={(e) => addEmailToJoinList()}>Join Waitlist</button>
+                </form>
             </main>
             <footer>
                 <div>

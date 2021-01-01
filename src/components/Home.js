@@ -164,8 +164,7 @@ const Home = (props) => {
                             <div>
                                 <h3>How much does this cost?</h3>
                                 <p>We are going to release a beta version next month. We would request you to
-                                join the waitlist to get early access by giving your name and email. Friends
-                                in waitlist will get first 2 months of our premium plan for free.
+                                join the waitlist to get early access by giving your name and email.
                                 We will keep you informed about the cost and releases. Don’t worry cost
                                     is budget friendly.</p>
                             </div>
