@@ -28,7 +28,7 @@ const Waitlist = (props) => {
             })
             if (data.status === 200) {
                 let number = Math.floor((Math.random() * 1000) + 400);
-                alert("You have joined wait list succesfully and you are " + number + " in list")
+                alert("Thanks, you have joined the waitlist successfully and you are waiting " + number + " in the list")
             }
         } catch (error) {
             console.log(error)
