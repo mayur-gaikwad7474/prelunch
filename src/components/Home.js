@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import React, { useEffect } from 'react'
 import './Home.css'
 import Home_image from '../Assets/Home.png'
 import View from '../Assets/360.png'
@@ -21,7 +21,7 @@ const Home = (props) => {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, [])
-    
+
     return (
         <div>
             <nav>
@@ -35,7 +35,7 @@ const Home = (props) => {
                 }}
                     className="wailist-button">
                     Join Waitlist
-              </NavLink>
+                </NavLink>
             </nav>
 
             <main>
@@ -117,7 +117,7 @@ const Home = (props) => {
                     }}
                         className="wailist-button">
                         Join Waitlist
-                   </NavLink>
+                    </NavLink>
                 </section>
 
                 <section className="information">
@@ -157,15 +157,15 @@ const Home = (props) => {
                             <div>
                                 <h3>How can this help me save time?</h3>
                                 <p>With Creatosaurus, you don’t need to juggle between multiple tools,
-                                integrations, subscription and avoid offline interventions thus
-                                streamlining your complete social media marketing pipeline and saves
+                                    integrations, subscription and avoid offline interventions thus
+                                    streamlining your complete social media marketing pipeline and saves
                                     your cost, efforts, time, and resources.</p>
                             </div>
                             <div>
                                 <h3>How much does this cost?</h3>
                                 <p>We are going to release a beta version next month. We would request you to
-                                join the waitlist to get early access by giving your name and email.
-                                We will keep you informed about the cost and releases. Don’t worry cost
+                                    join the waitlist to get early access by giving your name and email.
+                                    We will keep you informed about the cost and releases. Don’t worry cost
                                     is budget friendly.</p>
                             </div>
                         </div>
@@ -173,15 +173,15 @@ const Home = (props) => {
                             <div>
                                 <h3>Whats your vision and mission?</h3>
                                 <p>Creatosaurus’s vision is to leverage AI and streamline, optimize and automate
-                                the complete social media marketing pipeline with a mission to empower and
-                                     uplift the citizen creators/marketers with low code/no code approach.</p>
+                                    the complete social media marketing pipeline with a mission to empower and
+                                    uplift the citizen creators/marketers with low code/no code approach.</p>
                             </div>
                             <div>
                                 <h3>What makes Creatosaurus different from other tools?</h3>
                                 <p>We are building this platform for ease of team’s work and align
-                                them to focus on being the most productive and always have the
-                                right tools & analytics in hand. With the no code/low code
-                                approach platform is very easy to use for everyone and collaborate with
+                                    them to focus on being the most productive and always have the
+                                    right tools & analytics in hand. With the no code/low code
+                                    approach platform is very easy to use for everyone and collaborate with
                                     team at ease.</p>
                             </div>
                         </div>
@@ -197,12 +197,17 @@ const Home = (props) => {
                     }}
                         className="wailist-button">
                         Join the Waitlist
-                     </NavLink>
+                    </NavLink>
                 </section>
 
             </main>
 
             <footer>
+                <div className="row">
+                    <span>email: contact@creatosaurus.io</span>
+                    <span>number: 9665047289</span>
+                    <span>Address: 12, Gangai Hills, Building C, Ambegaon Budruk, Pune, India, 411041</span>
+                </div>
                 <div>
                     <h4>© 2020 Creatosaurus</h4>
                     <NavLink to="/terms&conditions">Terms of Service</NavLink>

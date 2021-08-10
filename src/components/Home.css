@@ -697,6 +697,16 @@ footer img {
   width: 30px;
 }
 
+footer .row {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+footer .row span {
+  margin: 2px;
+}
+
 @media screen and (max-width: 550px) {
   footer {
     flex-direction: column;
